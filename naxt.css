@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(13, 2, 26);
+    background: url(./4357397.jpg) no-repeat;
+    background-size: 100%;
+    background-repeat: repeat-y ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+}
+
+.container {
+    width: 1500px;
+    height: 750px;
+    background: url(./container.jpg) no-repeat;
+    background-size: 100%;
+    background-color: rgb(0, 0, 20);
+    margin-top: 100px;
+}
+
+.box1 {
+    width: 700px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid rgb(129, 130, 134);
+    display: flex;
+    align-items: center;
+}
+
+.box5 {
+    color: rgb(255, 0, 0);
+    font-family: cursive;
+    width: 200px;
+    height: 30px;
+    border: 3px solid rgb(129, 130, 134);
+    border-radius: 10px;
+    margin-left: 30px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    /* display: flex; */
+    justify-content: center;
+    transition: 0.5s;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    font-size: 10px;
+    margin-top: -15px;
+}
+
+.box5:hover {
+    height: 250px;
+    /* margin-top: 250?x; */
+    border: 3px solid black;
+    z-index: 1010101;
+
+}
+
+.box5 p {
+    color: rgb(129, 130, 134);
+    font-size: 25px;
+    margin-top: 15px;
+    transition: 0.2s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.box5 p:hover {
+    text-shadow: 0 0 10px rgb(110, 113, 128);
+}
+
+.textInput {
+    width: 300px;
+    height: 30px;
+    font-size: 25px;
+    color: rgb(110, 113, 128);
+    font-family: cursive;
+    margin-left: 280px;
+    border-radius: 10px;
+    margin-top: 0px;
+    padding-left: 10px;
+    border: 3px solid rgb(129, 130, 134);
+}
+
+.fa-search {
+    font-size: 20px;
+    color: rgb(129, 130, 134);
+}
+
+.button {
+    width: 50px;
+    height: 30px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+    border: 3px solid rgb(110, 113, 128);
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+.button:active {
+    box-shadow: 4px 4px 0px 1px rgba(129, 130, 134, 0.452);
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.box2 {
+    width: 700px;
+    height: 50px;
+    border: 3px solid rgb(129, 130, 134);
+    background-color: white;
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-family: cursive;
+    position: relative;
+    color: rgb(129, 130, 134);
+    padding-left: 130px;
+}
+
+.box2 a {
+    color: rgb(129, 130, 134);
+    margin-top: 5px;
+    z-index: 111;
+}
+
+.breakfast {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    filter: blur(5px);
+    border: 5px solid rgb(110, 113, 128);
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    margin-top: 10px;
+    left: 110px;
+    transition: 0.5s;
+
+}
+
+.lunch {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    filter: blur(5px);
+    border: 5px solid rgb(110, 113, 128);
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    margin-top: 10px;
+    left: 275px;
+    transition: 0.5s;
+
+}
+
+.shakes {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    filter: blur(5px);
+    border: 5px solid rgb(110, 113, 128);
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    margin-top: 10px;
+    left: 425px;
+    transition: 0.5s;
+
+}
+
+.box3 {
+    width: 1400px;
+    height: 600px;
+    /* backdrop-filter: blur(4px); */
+    margin: 0 auto;
+    /* border: 3px solid rgb(129, 130, 134); */
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    /* justify-content: center; */
+
+}
+/* .box3:hover{
+    backdrop-filter: blur(0);
+} */
+#bar{
+    border: 2px solid rgb(129, 130, 134);
+    border-radius: 20px;
+    transition: 0.5s;
+    /* margin-left: -300px; */
+    color: rgb(110, 113, 128);
+    position: relative;
+}
+#bar:hover{
+    backdrop-filter: blur(10px) !important;
+    /* background-color: red; */
+    color: black !important;
+}
+#bar img{
+    max-width: 400px;
+    max-height: 400px;
+    margin: 5px;
+    border-radius: 10px;
+    /* position: absolute; */
+}
+#bar h2{
+    margin-left: 10px;
+    font-size: 20px;
+    position: absolute;
+    
+    font-family: cursive;
+    position: absolute
+}
+#bar p{
+    /* margin-left: 5px; */
+    background-color: white;
+    border: 1px dashed rgb(110, 113, 128);
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 15px;
+    /* margin-top: 150px; */
+    font-family: cursive;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+#bar h3 {
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 50px;
+
+    font-family: cursive;
+    position: absolute
+}
+#bar h4 {
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 75px;
+    width: 300px;
+    text-align: justify;
+    font-family: cursive;
+    position: absolute
+}
+.buyurtma{
+    width: 1500px;
+    height: 850px;
+    /* border: 3px solid white; */
+    position: absolute;
+    margin-top: 1850px;
+    /* display: flex; */
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+.buyurtmaH1{
+    position: absolute;
+    color: white;
+    font-family: cursive;
+    font-size: 50px;
+    border-bottom: 5px solid white;
+    margin-top: 900px;
+}
+.buyurtma h2{
+    color: rgb(129, 130, 134);
+    font-family: cursive;
+    /* margin-left: 100xp; */
+    font-size: 40px;
+    margin-top: 100px;
+    display: block;
+}
+.pas{
+    width: 100%;
+    position: absolute;
+    height: 100px;
+    margin-top: 2800px;
+}
+.buyurtma input{
+    width: 300px;
+    margin-left: 50px;
+    height: 40px;
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid white;
+
+    
+}
+.btn{
+    margin-left: 100px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: 2px solid white;
+    position: absolute;
+    transition: 0.2s;
+    margin-left: 500px;
+    margin-top: -60px;
+}
+.btn:active{
+    border-radius: 0px;
+}
+.izoh{
+    position: absolute;
+    margin-top:80px;
+    min-width: 500px !important;
+    margin-left: -550px !important;
+    min-height: 200px !important;
+    /* text-align: justify !important; */
+    font-family: cursive;
+    color: rgb(129, 130, 134);
+}
